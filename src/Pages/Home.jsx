@@ -1,52 +1,59 @@
 import React from 'react'
+import HomeListing from '../components/HomeListing'
+import popularHomesData from '../components/HomeListingData'
+import BlogPost from '../components/BlogPost'
+import blogPostData from '../components/BlogPostData'
 
 const Home = () => {
   return (
-    <div className=" text-black relative ">
-		<section className="relative bg-[url(https://media.istockphoto.com/id/1508453163/photo/two-modern-buildings-with-glass-windows-architecture-design-of-buildings-office-space-houses.jpg?s=612x612&w=0&k=20&c=RSJYaxThii5iK-zk_69h16UVthwufA1gbaxoZEKOUZg=)] bg-cover bg-center bg-no-repeat ">
-  			<div className="absolute inset-0 bg-white opacity-60 md:from-white/95 sm:to-white/25 lg:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
-			  <div className="flex flex-col relative lg:w-1/2 md:w-1/2 md:px-6 justify-center lg:items-start px-6 py-8 lg:px-24 lg:py-24">
-				<h2 className=" lg:text-6xl text-4xl md:text-5xl leading-tight md:leading-snug mb-4 font-bold lg:font-semibold">Find a house that suits you
+    <div className=" text-black ">
+		<section className='relative bg-sky-100 grid px-4 pt-28 pb-10 lg:gap-8 xl:gap-0 lg:py-8 lg:grid-cols-12'>
+			
+			<div class="mx-auto place-self-center lg:col-span-7">
+				<h2 class="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl">Find a house that suits you
 				</h2>
-				<p className=" text-gray-600 font-medium mb-4 lg:text-xl">Want to find a home? We are ready to find one that suits your lifestyle and needs</p>
-				<a href="#"
-					className="bg-black text-center text-white rounded shadow hover:shadow-lg py-2 px-8 mb-12">
-					Get Started
-				</a>
-				<ul className='grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-16'> 
+				<p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Want to find a home? We are ready to find one that suits your lifestyle and needs</p>
+				<a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-md bg-black mb-8">
+                Get started
+                
+            	</a>
+				<ul className='grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-8'> 
 					<li >
 						<div className='flex items-center'>
 							<h2 className='text-2xl font-medium'>1200</h2>
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-blue-800 font-extrabold">
 							<path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
 							</svg>
 						</div>
-						<p>Listed Properties</p>
+						<p className='text-sm'>Listed Properties</p>
 					</li>
 					<li>
 						<div className='flex items-center'>
 							<h2 className='text-2xl font-medium'>4500</h2>
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-blue-800 font-extrabold">
 							<path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
 							</svg>
 						</div>
-						<p>Happy Customers</p>
+						<p className='text-sm'>Happy Customers</p>
 					</li>
 					<li>
 						<div className='flex items-center'>
 							<h2 className='text-2xl font-medium'>100</h2>
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-blue-800 font-extrabold">
 							<path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
 							</svg>
 						</div>
-						<p>Awards</p>
+						<p className='text-sm'>Awards</p>
 					</li>
 				</ul>
 			</div>
+			<div class="hidden lg:mt-0 lg:col-span-5 lg:flex bg-sky-100 ">
+				<img src="https://o.remove.bg/downloads/3aaa1ab0-3455-4154-99ef-bb254cac5918/photo-1479839672679-a46483c0e7c8-removebg-preview.png" alt="" />
+			</div>
 		</section>
-		<div className='lg:absolute inset-x-0 top-96 flex flex-col bg-white shadow-md justify-center rounded-sm p-5 mx-auto md:mx-32 my-10 lg:mt-24 space-y-4 ' id='Searchbox'>
-			<p className='font-semibold mb-8'>Search for available Properties</p>
-			<div className='lg:grid md:grid md:grid-cols-3 lg:grid-cols-4 gap-4'>
+		<div className='lg:absolute inset-x-0 top-96 flex flex-col bg-white shadow-md justify-center rounded-sm p-5 mx-auto md:mx-24 my-10 lg:mt-44 space-y-4 '>
+			<p className='font-semibold'>Search for available Properties</p>
+			<div className='lg:grid md:grid md:grid-cols-3 lg:grid-cols-4 py-4 gap-4'>
 
 				<div class="relative ">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute top-2/4 right-3 -translate-y-2/4 place-items-center text-black w-6 h-6">
@@ -79,216 +86,102 @@ const Home = () => {
 		</div>
 		<div className='w-auto mx-2 space-y-4 flex flex-col lg:mt-36 lg:mx-24'>
 			<div className='flex items-center'>
-				<hr className='w-16 h-1 mx-4  bg-black border-0 rounded'/>
+				<hr className='w-16 h-1 mr-3  bg-black border-0 rounded'/>
 				<p className='text-2xl font-medium'>Popular</p>
 			</div>
-			<p>Our Popular Homes</p>
-			<div className='flex flex-col lg:flex-row space-x-4'>
+			<span className='flex justify-between items-center'>
 
-				<div className='border-2'>
-					<img src="https://static.wixstatic.com/media/710728_97c5c23fd61648ffb323e8bf32919e91~mv2.jpg/v1/fill/w_473,h_355,fp_0.50_0.50,q_90,enc_auto/710728_97c5c23fd61648ffb323e8bf32919e91~mv2.jpg" alt="A building" className='w-full' />
-					<div className='bg-white rounded-sm mb-6 p-4'>
-						<div className='flex space-x-4'>
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-								<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-							</svg>
+				<p className='text-3xl font-bold'>Our Popular Homes</p>
+				<button className='flex justify-center space-x-4 font-medium'>
+					<a href="#">Explore All </a>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+						<path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+					</svg>
+				</button>
 
-							<p className='font-bold'>Banana Island, Lagos</p>
-						</div>
-						<div className='flex py-5 justify-between'>
-							<div className='flex space-x-3'>
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-									<path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-								</svg>
-
-								<p className='font-normal my-auto'>4 Bed</p>
-							</div>
-							<div className='flex space-x-3'>
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-								<path strokeLinecap="round" strokeLinejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-							</svg>
-
-								<p className='font-normal my-auto'>10x10 m</p>
-							</div>
-							<div className='flex space-x-3'>
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-									<path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
-								</svg>
-
-								<p className='font-normal my-auto'>1600</p>
-							</div>
-						</div>
-
-						<div className='flex justify-between items-center'>
-							<button className='py-2 px-4 bg-black text-white font-semibold rounded-md'>Book Now</button>
-							<p className='text-xl font-medium text-center'>NGN100,000,000</p>
-						</div>
-					</div>
-				</div>
-				<div className='border-2 '>
-					<img src="https://static.wixstatic.com/media/710728_97c5c23fd61648ffb323e8bf32919e91~mv2.jpg/v1/fill/w_473,h_355,fp_0.50_0.50,q_90,enc_auto/710728_97c5c23fd61648ffb323e8bf32919e91~mv2.jpg" alt="A building" className='w-full' />
-					<div className='bg-white rounded-sm mb-6 p-4'>
-						<div className='flex space-x-4'>
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-								<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-							</svg>
-
-							<p className='font-bold'>Banana Island, Lagos</p>
-						</div>
-						<div className='flex py-5 justify-between'>
-							<div className='flex space-x-3'>
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-									<path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-								</svg>
-
-								<p className='font-normal my-auto'>4 Bed</p>
-							</div>
-							<div className='flex space-x-3'>
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-								<path strokeLinecap="round" strokeLinejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-							</svg>
-
-								<p className='font-normal my-auto'>10x10 m</p>
-							</div>
-							<div className='flex space-x-3'>
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-									<path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
-								</svg>
-
-								<p className='font-normal my-auto'>1600</p>
-							</div>
-						</div>
-
-						<div className='flex justify-between items-center'>
-							<button className='py-2 px-4 bg-black text-white font-semibold rounded-md'>Book Now</button>
-							<p className='text-xl font-medium text-center'>NGN100,000,000</p>
-						</div>
-					</div>
-				</div>
-				<div className='border-2'>
-					<img src="https://static.wixstatic.com/media/710728_97c5c23fd61648ffb323e8bf32919e91~mv2.jpg/v1/fill/w_473,h_355,fp_0.50_0.50,q_90,enc_auto/710728_97c5c23fd61648ffb323e8bf32919e91~mv2.jpg" alt="A building" className='w-full' />
-					<div className='bg-white rounded-sm mb-6 p-4'>
-						<div className='flex space-x-4'>
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-								<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-							</svg>
-
-							<p className='font-bold'>Banana Island, Lagos</p>
-						</div>
-						<div className='flex py-5 justify-between'>
-							<div className='flex space-x-3'>
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-									<path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-								</svg>
-
-								<p className='font-normal my-auto'>4 Bed</p>
-							</div>
-							<div className='flex space-x-3'>
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-								<path strokeLinecap="round" strokeLinejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-							</svg>
-
-								<p className='font-normal my-auto'>10x10 m</p>
-							</div>
-							<div className='flex space-x-3'>
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-									<path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
-								</svg>
-
-								<p className='font-normal my-auto'>1600</p>
-							</div>
-						</div>
-
-						<div className='flex justify-between items-center '>
-							<button className='py-2 px-4 bg-black text-white font-semibold rounded-md'>Book Now</button>
-							<p className='text-xl font-medium text-center'>NGN100,000,000</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<button className='flex justify-center space-x-4'>
-				<a href="#">Explore All </a>
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-  					<path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-				</svg>
-
-			</button>
-		</div>
-		<section className='p-4 lg:mx-24'>
-			<img src="https://media.istockphoto.com/id/1508453163/photo/two-modern-buildings-with-glass-windows-architecture-design-of-buildings-office-space-houses.webp?b=1&s=170667a&w=0&k=20&c=t-gSh1gXGJyb_-PHSxwzSaEnSh-B4atbRbsQcMoHWwQ=" alt="" />
-			<span className='flex items-center'>
-				<hr className='w-16 h-1 mx-4  bg-black border-0 rounded'/>
-				<p className='text-2xl font-medium'>OUR SERVICES</p>
 			</span>
-			<p>Your Comfort Is Our Priority</p>
-			<p>Finding you a home that you'd love and enjoy</p>
-			<p>staying in is our top priority. Your comfort is key</p>
-			<div className='flex'>
-				<ul>
-					<li>Free Marketing</li>
-					<li>Managed Viewings</li>
-				</ul>
-				<ul>
-					<li>No Valuations</li>
-					<li>Free Marketing</li>
-				</ul>
+			<div className='md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-8'>
+
+				{popularHomesData.map((home) => (
+					<HomeListing
+						key={home.id}
+						image={home.image}
+						location={home.location}
+						bedCount={home.bedCount}
+						area={home.area}
+						squareMeter={home.squareMeter}
+						price={home.price}
+					/>
+				))}			
 			</div>
-			<button className='py-2 px-6 bg-black text-white font-semibold rounded-md'>See More</button>
+		</div>
+		<section className='mx-2 md:mx-18 md:flex lg:mx-24 lg:flex justify-between my-8'>
+			<div>
+
+				<img src="https://media.istockphoto.com/id/1508453163/photo/two-modern-buildings-with-glass-windows-architecture-design-of-buildings-office-space-houses.webp?b=1&s=170667a&w=0&k=20&c=t-gSh1gXGJyb_-PHSxwzSaEnSh-B4atbRbsQcMoHWwQ=" alt=""  />
+			</div>
+			<div className='px-12'>
+				<span className='flex items-center'>
+					<hr className='w-12 h-1 mr-4  bg-black border-0'/>
+					<p className='text-xl'>OUR SERVICES</p>
+				</span>
+				<p className='font-bold text-2xl mb-4'>Your Comfort Is Our Priority</p>
+				<p className='text-gray-500'>Finding you a home that you'd love and enjoy</p>
+				<p className='text-gray-500'>staying in is our top priority. Your comfort is key</p>
+				<div className='flex space-x-12 mt-4 font-medium text-sm lg:text-lg'>
+					<ul className='list-disc list-inside'>
+						<li>Free Marketing</li>
+						<li>Managed Viewings</li>
+					</ul>
+					<ul className='list-disc list-inside'>
+						<li>No Valuations</li>
+						<li>Free Marketing</li>
+					</ul>
+				</div>
+				<button className='py-2 px-6 bg-black text-white font-semibold rounded-md mt-8'>See More</button>
+			</div>
 		</section>
 		<div className='w-auto mx-2 space-y-4 flex flex-col lg:mx-24 '>
-			<div className='flex items-center'>
-				<hr className='w-16 h-1 mx-4  bg-black border-0 rounded'/>
-				<p className='text-2xl font-medium'>OUR BLOG</p>
-			</div>
-			<p>Latest Information</p>
-			<div className='lg:flex lg:flex-row '>
+			<span className='flex justify-between items-center'>
 
-				<div className='border-2'>
-					<img src="https://static.wixstatic.com/media/710728_97c5c23fd61648ffb323e8bf32919e91~mv2.jpg/v1/fill/w_473,h_355,fp_0.50_0.50,q_90,enc_auto/710728_97c5c23fd61648ffb323e8bf32919e91~mv2.jpg" alt="A building" className='w-full' />
-					<div className='bg-white rounded-sm mb-6 p-4'>
-						<div className='flex space-x-4 items-center'>
-							<div className='w-4 h-4 rounded-full bg-indigo-700'></div>
-							<p className='font-bold'>3 June 2023</p>
-						</div>
-						<hr />
-						<p>The Challenges Of Investment In Real Estate</p>
-						<button className='py-2 px-4 bg-blue-200 text-indigo-500 font-semibold rounded-md'>Read More</button>
-					</div>
+				<div >
+					<span className='flex items-center'>
+
+						<hr className='w-16 h-1 mr-4  bg-black border-0 rounded'/>
+						<p className='text-xl font-medium'>OUR BLOG</p>
+					</span>
+					<p className='text-2xl font-bold'>Latest Information</p>
 				</div>
-				<div className='border-2'>
-					<img src="https://static.wixstatic.com/media/710728_97c5c23fd61648ffb323e8bf32919e91~mv2.jpg/v1/fill/w_473,h_355,fp_0.50_0.50,q_90,enc_auto/710728_97c5c23fd61648ffb323e8bf32919e91~mv2.jpg" alt="A building" className='w-full' />
-					<div className='bg-white rounded-sm mb-6 p-4'>
-						<div className='flex space-x-4 items-center'>
-							<div className='w-4 h-4 rounded-full bg-indigo-700'></div>
-							<p className='font-bold'>3 June 2023</p>
-						</div>
-						<hr />
-						<p>The Challenges Of Investment In Real Estate</p>
-						<button className='py-2 px-4 bg-blue-200 text-indigo-500 font-semibold rounded-md'>Read More</button>
-					</div>
-				</div>
-				<div className='border-2'>
-					<img src="https://static.wixstatic.com/media/710728_97c5c23fd61648ffb323e8bf32919e91~mv2.jpg/v1/fill/w_473,h_355,fp_0.50_0.50,q_90,enc_auto/710728_97c5c23fd61648ffb323e8bf32919e91~mv2.jpg" alt="A building" className='w-full' />
-					<div className='bg-white rounded-sm mb-6 p-4'>
-						<div className='flex space-x-4 items-center'>
-							<div className='w-4 h-4 rounded-full bg-indigo-700'></div>
-							<p className='font-bold'>3 June 2023</p>
-						</div>
-						<hr />
-						<p>The Challenges Of Investment In Real Estate</p>
-						<button className='py-2 px-4 bg-blue-200 text-indigo-500 font-semibold rounded-md'>Read More</button>
-					</div>
-				</div>
+				<p className='hidden lg:block text-lg'>Stay up to date with all information about our listed properties</p>
+				<button className="py-3 px-5 bg-black text-white font-semibold rounded-md" >
+					See More
+				</button>
+
+			</span>
+			
+			<div className='lg:flex lg:flex-row md:flex-row gap-8'>
+				{blogPostData.map((post) => (
+					<BlogPost
+					key={post.id}
+					imageUrl={post.imageUrl}
+					date={post.date}
+					title={post.title}
+					/>
+      			))}			
 			</div>
 		</div>
 
-		<section className='bg-black text-white '>
-			<div className='lg:mx-24'>
-				<div className='flex items-center'>
-					<hr className='w-16 h-1 mx-4  bg-white border-0 rounded'/>
-					<p className='text-2xl font-medium'>TESTIMONIALS</p>
+		<section className='bg-black text-white p-8 mt-6'>
+			<div className='lg:mx-24 flex justify-between'>
+				<div >
+					<span className='flex items-center'>
+
+						<hr className='w-12 h-1 mr-4  bg-white border-0'/>
+						<p className='text-lg'>TESTIMONIALS</p>
+					</span>
+					<h2 className='text-2xl'>What Our Clients Say About Us</h2>
+
 				</div>
-				<h2>What Our Clients Say About Us</h2>
 				<div>
 					<button>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -303,43 +196,55 @@ const Home = () => {
 					</button>
 				</div>
 			</div>
-			<div className='lg:mx-24'>
-				<span>
+			<div className='lg:mx-24 flex mt-8'>
+				<span className='flex gap-8'>
+					<div className='w-1/3'>
 
-					<img src="https://media.istockphoto.com/id/1286810719/photo/smiling-cheerful-young-adult-african-american-ethnicity-man-looking-at-camera-standing-at.jpg?s=612x612&w=0&k=20&c=b9sWYITIZ_yjXB3m-Xftj-latPXQDhb5Roa0pA0JaNY=" alt="" />
-					<span>
-						<h3>Fikayo Tomori</h3>
-						<p>I am very impressed with the service of la Maison. I'd definitely recommend them to my buddies</p>
+						<img src="https://media.istockphoto.com/id/1286810719/photo/smiling-cheerful-young-adult-african-american-ethnicity-man-looking-at-camera-standing-at.jpg?s=612x612&w=0&k=20&c=b9sWYITIZ_yjXB3m-Xftj-latPXQDhb5Roa0pA0JaNY=" alt="" className='' />
+					</div>
+					<span className='space-y-4'>
+						<h3 className='text-2xl text-gray-50'>Fikayo Tomori</h3>
+						<p className='text-gray-300 text-xl'>I am very impressed with the service of la Maison. I'd definitely recommend them to my buddies</p>
 						<ul>
-							<li>Footballer</li>
+							<li className='list-disc list-inside'>Footballer</li>
 						</ul>
 					</span>
 				</span>
-				<span>
+				<span className='flex gap-8'>
+					<div className='w-1/2'>
 
-					<img src="https://media.istockphoto.com/id/1280113805/photo/smiling-young-woman-beauty-close-up-portrait.webp?b=1&s=170667a&w=0&k=20&c=RE3mToPREvy-KeYvOCXGX6r6znzdrQP0khIFJbU0Lpc=" alt="" />
-					<span>
-						<h3>Anne Harlow</h3>
-						<p>I am very impressed with the service of la Maison. I'd definitely recommend them to my buddies</p>
+						<img src="https://media.istockphoto.com/id/1280113805/photo/smiling-young-woman-beauty-close-up-portrait.webp?b=1&s=170667a&w=0&k=20&c=RE3mToPREvy-KeYvOCXGX6r6znzdrQP0khIFJbU0Lpc=" alt="" className='' />
+					</div>
+					<span className='space-y-4'>
+						<h3 className='text-2xl text-gray-50'>Anne Harlow</h3>
+						<p className='text-gray-300 text-xl'>I am very impressed with the service of la Maison. I'd definitely recommend them to my buddies</p>
 						<ul>
-							<li>Actress</li>
+							<li className='list-disc list-inside'>Actress</li>
 						</ul>
 					</span>
 				</span>
 			</div>
 		</section>
-		<section className='lg:mx-24'>
-			<div>
-				<div className='flex items-center'>
-					<hr className='w-24 '/>
+		<section className='m-4 lg:mx-24 lg:flex justify-between'>
+			<div className='space-y-2'>
+				<div className='flex items-center '>
+					<hr className='w-16 h-1 mx-4  bg-black border-0 rounded'/>
 					<p>FAQS</p>
 				</div>
-				<h3>Frequently Asked Questions</h3>
-				<p>Have questions you want answers to?</p>
-				<button className='py-2 px-4 bg-black text-white font-semibold rounded-md'>See More</button>
+				<div className='flex justify-between lg:flex-col md:flex-col space-y-6'>
+
+					<span className='space-y-2'>
+
+						<h3 className='text-2xl font-bold'>Frequently Asked Questions</h3>
+						<p>Have questions you want answers to?</p>
+					</span>
+					<div>
+						<button className=' py-2 px-6 bg-black text-white font-semibold rounded-md '>See More</button>
+					</div>
+				</div>
 			</div>
 
-			<div class="m-2 space-y-2 ">
+			<div class="md:w-1/2 lg:w-1/2 text-xl font-semibold ">
   				<div class="group flex flex-col gap-2 rounded-lg bg-white p-5 text-black" tabindex="1">
 					<div class="flex cursor-pointer items-center justify-between">
 						<div className='flex items-center space-x-4'>
@@ -353,7 +258,7 @@ const Home = () => {
 
 					</div>
 					<div
-					class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 px-6"
+					class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 px-6 text-sm text-gray-500"
 					>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -376,7 +281,7 @@ const Home = () => {
 						</svg>
 					</div>
 					<div
-					class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 px-6"
+					class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 px-6 text-gray-500 text-sm"
 					>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -399,7 +304,7 @@ const Home = () => {
 						</svg>
 					</div>
 					<div
-					class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 px-6"
+					class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 px-6 text-gray-500 text-sm"
 					>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

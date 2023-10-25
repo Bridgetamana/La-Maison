@@ -3,39 +3,8 @@ import React from 'react'
 const Footer = () => {
   return (
     <div class="container px-6 py-12 mx-auto">
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-            <div class="sm:col-span-2">
-                <h1 class="max-w-lg text-xl font-semibold text-gray-800 xl:text-2xl">Subscribe our newsletter to get update.</h1>
-
-                <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
-                    <input id="email" type="text" class="px-4 py-2 text-gray-700 bg-white border rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Email Address" />
-                    <button class="w-full px-6 py-2.5 font-medium text-white md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-md hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-                        Subscribe
-                    </button>
-                </div>
-            </div>
-
-            <div>
-                <p class="font-semibold text-gray-800">Quick Link</p>
-
-                <div class="flex flex-col items-start mt-5 space-y-2">
-                    <a href="#" class="text-gray-600 hover:underline hover:text-blue-500">Home</a>
-                    <a href="#" class="text-gray-600 hover:underline hover:text-blue-500">About Us</a>
-                    <a href="#" class="text-gray-600 hover:underline hover:text-blue-500">Properties</a>
-                </div>
-            </div>
-
-            <div>
-                <p class="font-semibold text-gray-800 dark:text-white">Contact</p>
-
-                <div class="flex flex-col items-start mt-5 space-y-2">
-                    <a href="#" class="text-gray-600 hover:underline hover:text-blue-500">Agents</a>
-                    <a href="#" class="text-gray-600 hover:underline hover:text-blue-500">Contact us</a>
-                </div>
-            </div>
-        </div>
         
-        <hr class="my-6 border-gray-200 md:my-8 dark:border-gray-700" />
+        <hr class="my-6 border-gray-300 md:my-8" />
         
         <div class="flex items-center justify-between">
             <a href="#" className='text-black font-bold'>
@@ -43,7 +12,7 @@ const Footer = () => {
             </a>
             
             <div class="flex -mx-2">
-                <a href="#" class="mx-2 border-2 rounded-full p-1 text-gray-600 hover:text-blue-500" aria-label="Twitter">
+                <a href="#" class="mx-2 border-2 rounded-full p-1 text-black hover:text-blue-500" aria-label="Twitter">
                     <svg className='w-5 h-5 fill-current'
                         xmlns="http://www.w3.org/2000/svg" 
                         viewBox="0 0 24 24">
@@ -52,7 +21,7 @@ const Footer = () => {
                     </svg>
                 </a>
 
-                <a href="#" class="mx-2 border-2 rounded-full p-1 text-gray-600 hover:text-blue-500" aria-label="Linkedin">
+                <a href="#" class="mx-2 border-2 rounded-full p-1 text-black hover:text-blue-500" aria-label="Linkedin">
                     
                 <svg className='w-5 h-5 fill-current'
                     xmlns="http://www.w3.org/2000/svg" 
@@ -62,7 +31,7 @@ const Footer = () => {
                 </svg>
                 </a>
 
-                <a href="#" class="mx-2 border-2 rounded-full p-1 text-gray-600 hover:text-blue-500" aria-label="Facebook">
+                <a href="#" class="mx-2 border-2 rounded-full p-1 text-black hover:text-blue-500" aria-label="Facebook">
                     <svg className='w-5 h-5 fill-current'
                         xmlns="http://www.w3.org/2000/svg" 
                         viewBox="0 0 30 30">
@@ -71,7 +40,7 @@ const Footer = () => {
                     </svg>
                 </a>
 
-                <a href="#" class="mx-2 border-2 rounded-full p-1 text-gray-600 hover:text-blue-500" aria-label="Intsagram">
+                <a href="#" class="mx-2 border-2 rounded-full p-1 text-black hover:text-blue-500" aria-label="Intsagram">
                     <svg className='w-5 h-5 fill-current'
                         xmlns="http://www.w3.org/2000/svg" 
                         viewBox="0 0 30 30">

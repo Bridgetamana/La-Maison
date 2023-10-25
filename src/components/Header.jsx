@@ -1,81 +1,95 @@
 import React, { useState } from 'react';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const handleMenuToggle = () => {
+  const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <div>
-        <nav className=" lg:px-24 lg:py-4 px-6 bg-sky-100 shadow-md flex flex-wrap items-center py-2">
-            <div className="flex-1 flex justify-between items-center">
-                <a className="mt-3 text-black font-bold ">La Maison</a>
-            </div>
-            <label
-            htmlFor="menu-toggle"
-            className="cursor-pointer lg:hidden block"
-            onClick={handleMenuToggle}
-            >   
-                <svg
-                className="fill-current text-gray-900"
+      <nav className="bg-sky-100 shadow-sm fixed w-full z-20 top-0 left-0 ">
+        <div className=" flex flex-wrap items-center justify-between px-4 py-4  md:px-24">
+          <a href="#" className="flex items-center">
+            <span className="self-center text-xl font-bold whitespace-nowrap">
+              La Maison
+            </span>
+          </a>
+          <div className="flex md:order-2">
+            <button
+              type="button"
+              className="font-medium rounded-md text-sm px-4 py-2 text-center mr-3 md:mr-0 text-black border-2 border-black"
+            >
+              Find A House
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-sticky"
+              aria-expanded={isMenuOpen}
+              onClick={handleMenuToggle} 
+            >
+              <span className="sr-only">Open main menu</span>
+              <svg
+                className="w-5 h-5"
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isMenuOpen ? '' : 'hidden'}`}
+            id="navbar-sticky"
+          >
+            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-12 md:mt-0 md:border-0">
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                  aria-current="page"
                 >
-                <title>menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-            </label>
-            <input className="hidden" type="checkbox" id="menu-toggle" />
-            {isMenuOpen && (
-            <div className="lg:flex lg:items-center lg:w-auto w-full" id="menu">
-                <ul className="text-xl text-center items-center gap-x-6 lg:gap-x-20 pt-4 lg:text-lg lg:flex lg:pt-0">
-                    <li className="py-2 lg:py-0 ">
-                        <a
-                        className="text-slate-600 focus:text-black focus:font-semibold focus:border-b-4 focus:pb-2 focus:border-blue-900 hover:pb-2 hover:border-b-4 hover:border-blue-900"
-                        href="#">
-                            Home
-                        </a>                    
-                    </li>
-                    <li class="py-2 lg:py-0 ">
-                        <a
-                            class="text-slate-600 focus:text-black focus:font-semibold hover:pb-2 hover:border-b-4 hover:border-blue-900"
-                            href="#"
-                        >
-                            About Us
-                        </a>
-                    </li>
-                    <li class="py-2 lg:py-0 ">
-                        <a
-                        class="text-slate-600 focus:text-black focus:font-semibold hover:pb-2 hover:border-b-4 hover:border-blue-900"
-                        href="#"
-                        >
-                            Properties
-                        </a>
-                    </li>
-                    <li class="py-2 lg:py-0 ">
-                        <a
-                        class="text-slate-600 focus:text-black focus:font-semibold hover:pb-2 hover:border-b-4 hover:border-blue-900 "
-                        href="#"
-                        >
-                            Agents
-                        </a>
-                    </li>
-                    <li class="py-2 lg:py-0">
-                        <a
-                        class="text-slate-600 focus:text-black focus:font-semibold hover:border-blue-900 border-2 p-2 border-black"
-                        href="#"
-                        >
-                            Find A House
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        )}
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >
+                  Properties
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >
+                  Agents
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
   );
