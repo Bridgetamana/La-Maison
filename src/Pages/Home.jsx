@@ -13,7 +13,7 @@ const Home = () => {
 				<h2 class="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl">Find a house that suits you
 				</h2>
 				<p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Want to find a home? We are ready to find one that suits your lifestyle and needs</p>
-				<a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-md bg-black mb-8">
+				<a href={`/about`} class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-md bg-black mb-8">
                 Get started
                 
             	</a>
