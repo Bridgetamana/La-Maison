@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div>
       <nav className="bg-sky-100 shadow-sm fixed w-full z-20 top-0 left-0 ">
-        <div className=" flex flex-wrap items-center justify-between px-4 py-4  md:px-24">
+        <div className=" flex flex-wrap items-center justify-between px-4 py-4  md:px-10 lg:px-24">
           <a href="#" className="flex items-center">
             <span className="self-center text-xl font-bold whitespace-nowrap">
               La Maison
@@ -56,7 +56,7 @@ const Header = () => {
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-12 md:mt-0 md:border-0">
               <li>
                 <a
-                  href="#"
+                  href={`/`}
                   className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
                   aria-current="page"
                 >
@@ -65,7 +65,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href={`/about`}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
                 >
                   About Us

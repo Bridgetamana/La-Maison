@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div class="container px-6 py-12 mx-auto">
+    <div class="container px-6 md:mx-10 lg:mx-24 py-8 mx-auto">
         
         <hr class="my-6 border-gray-300 md:my-8" />
         

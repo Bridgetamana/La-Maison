@@ -3,13 +3,14 @@ import HomeListing from '../components/HomeListing'
 import popularHomesData from '../components/HomeListingData'
 import BlogPost from '../components/BlogPost'
 import blogPostData from '../components/BlogPostData'
+import Image from '../assets/apartment-image.png'
 
 const Home = () => {
   return (
-    <div className=" text-black ">
-		<section className='relative bg-sky-100 grid px-4 pt-28 pb-10 lg:gap-8 xl:gap-0 lg:py-8 lg:grid-cols-12'>
+    <div className=" text-black relative">
+		<section className='relative bg-sky-100 grid px-4 lg:grid-cols-9 py-4 md:pb-16'>
 			
-			<div class="mx-auto place-self-center lg:col-span-7">
+			<div class="md:pl-10 lg:pl-24 lg:col-span-6 ">
 				<h2 class="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl">Find a house that suits you
 				</h2>
 				<p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Want to find a home? We are ready to find one that suits your lifestyle and needs</p>
@@ -47,11 +48,11 @@ const Home = () => {
 					</li>
 				</ul>
 			</div>
-			<div class="hidden lg:mt-0 lg:col-span-5 lg:flex bg-sky-100 ">
-				<img src="https://o.remove.bg/downloads/3aaa1ab0-3455-4154-99ef-bb254cac5918/photo-1479839672679-a46483c0e7c8-removebg-preview.png" alt="" />
+			<div class="hidden lg:mt-0 lg:col-span-3 lg:flex bg-sky-100 ">
+				<img src={Image} alt="" className='' />
 			</div>
 		</section>
-		<div className='lg:absolute inset-x-0 top-96 flex flex-col bg-white shadow-md justify-center rounded-sm p-5 mx-auto md:mx-24 my-10 lg:mt-44 space-y-4 '>
+		<div className='lg:absolute inset-x-0 top-56 flex flex-col bg-white shadow-md justify-center rounded-sm p-5 mx-auto md:mx-24 my-8 lg:mt-44 space-y-4 '>
 			<p className='font-semibold'>Search for available Properties</p>
 			<div className='lg:grid md:grid md:grid-cols-3 lg:grid-cols-4 py-4 gap-4'>
 
@@ -84,7 +85,7 @@ const Home = () => {
 				</div>
 			</div>
 		</div>
-		<div className='w-auto mx-2 space-y-4 flex flex-col lg:mt-36 lg:mx-24'>
+		<div className='w-auto mx-2 space-y-4 flex flex-col lg:mt-36 md:mx-10 lg:mx-24'>
 			<div className='flex items-center'>
 				<hr className='w-16 h-1 mr-3  bg-black border-0 rounded'/>
 				<p className='text-2xl font-medium'>Popular</p>
@@ -115,7 +116,7 @@ const Home = () => {
 				))}			
 			</div>
 		</div>
-		<section className='mx-2 md:mx-18 md:flex lg:mx-24 lg:flex justify-between my-8'>
+		<section className='mx-2 md:mx-18 md:flex md:mx-10 lg:mx-24 lg:flex justify-between my-8'>
 			<div>
 
 				<img src="https://media.istockphoto.com/id/1508453163/photo/two-modern-buildings-with-glass-windows-architecture-design-of-buildings-office-space-houses.webp?b=1&s=170667a&w=0&k=20&c=t-gSh1gXGJyb_-PHSxwzSaEnSh-B4atbRbsQcMoHWwQ=" alt=""  />
@@ -141,7 +142,7 @@ const Home = () => {
 				<button className='py-2 px-6 bg-black text-white font-semibold rounded-md mt-8'>See More</button>
 			</div>
 		</section>
-		<div className='w-auto mx-2 space-y-4 flex flex-col lg:mx-24 '>
+		<div className='w-auto mx-2 space-y-4 flex flex-col md:mx-10 lg:mx-24 '>
 			<span className='flex justify-between items-center'>
 
 				<div >
@@ -159,7 +160,7 @@ const Home = () => {
 
 			</span>
 			
-			<div className='lg:flex lg:flex-row md:flex-row gap-8'>
+			<div className='md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-8 '>
 				{blogPostData.map((post) => (
 					<BlogPost
 					key={post.id}
@@ -172,7 +173,7 @@ const Home = () => {
 		</div>
 
 		<section className='bg-black text-white p-8 mt-6'>
-			<div className='lg:mx-24 flex justify-between'>
+			<div className='md:mx-10 lg:mx-24 flex justify-between'>
 				<div >
 					<span className='flex items-center'>
 
@@ -196,9 +197,9 @@ const Home = () => {
 					</button>
 				</div>
 			</div>
-			<div className='lg:mx-24 flex mt-8'>
+			<div className='md:mx-10 lg:mx-24 flex mt-8'>
 				<span className='flex gap-8'>
-					<div className='w-1/3'>
+					<div className='md:w-1/3'>
 
 						<img src="https://media.istockphoto.com/id/1286810719/photo/smiling-cheerful-young-adult-african-american-ethnicity-man-looking-at-camera-standing-at.jpg?s=612x612&w=0&k=20&c=b9sWYITIZ_yjXB3m-Xftj-latPXQDhb5Roa0pA0JaNY=" alt="" className='' />
 					</div>
@@ -211,7 +212,7 @@ const Home = () => {
 					</span>
 				</span>
 				<span className='flex gap-8'>
-					<div className='w-1/2'>
+					<div className='md:w-1/2'>
 
 						<img src="https://media.istockphoto.com/id/1280113805/photo/smiling-young-woman-beauty-close-up-portrait.webp?b=1&s=170667a&w=0&k=20&c=RE3mToPREvy-KeYvOCXGX6r6znzdrQP0khIFJbU0Lpc=" alt="" className='' />
 					</div>
@@ -225,7 +226,7 @@ const Home = () => {
 				</span>
 			</div>
 		</section>
-		<section className='m-4 lg:mx-24 lg:flex justify-between'>
+		<section className='m-4 md:mx-10 lg:mx-24 md:flex justify-between'>
 			<div className='space-y-2'>
 				<div className='flex items-center '>
 					<hr className='w-16 h-1 mx-4  bg-black border-0 rounded'/>
