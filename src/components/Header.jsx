@@ -20,8 +20,8 @@ const Header = () => {
             <button
               type="button"
               className="font-medium rounded-md text-sm px-4 py-2 text-center mr-3 md:mr-0 text-black border-2 border-black"
-            >
-              Find A House
+            ><a href={`/`}>
+              Find A House</a>
             </button>
             <button
               data-collapse-toggle="navbar-sticky"
@@ -73,7 +73,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href={`/properties`}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
                 >
                   Properties

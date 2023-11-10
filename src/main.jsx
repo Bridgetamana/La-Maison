@@ -9,6 +9,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import ErrorPage from './Pages/ErrorPage';
 import Layout from './Pages/Layout';
+import Propertiespage from './Pages/Propertiespage';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />
+      },
+      {
+        path: "/properties",
+        element: <Propertiespage />
       },
     ]
   },
