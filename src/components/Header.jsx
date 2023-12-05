@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import{ useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,9 +42,9 @@ const Header = () => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 1h15M1 7h15M1 13h15"
                 />
               </svg>
@@ -55,37 +56,33 @@ const Header = () => {
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-12 md:mt-0 md:border-0">
               <li>
-                <a
-                  href={`/`}
+                <Link to={`/`}
                   className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href={`/about`}
+                <Link to={`/about`}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href={`/properties`}
+                <Link to={`/properties`}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
                 >
                   Properties
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link to="#"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
                 >
                   Agents
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,4 +1,3 @@
-import React from 'react'
 import HomeListing from '../components/HomeListing'
 import popularHomesData from '../components/HomeListingData'
 

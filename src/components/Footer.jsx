@@ -1,18 +1,16 @@
-import React from 'react'
-
 const Footer = () => {
   return (
-    <div class="container px-6 md:mx-10 lg:mx-24 py-8 mx-auto">
+    <div className="container px-6 md:mx-10 py-8 mx-auto">
         
-        <hr class="my-6 border-gray-300 md:my-8" />
+        <hr className="my-6 border-gray-300 md:my-8" />
         
-        <div class="flex items-center justify-between">
+        <div className="flex items-center justify-between">
             <a href="#" className='text-black font-bold'>
                 La Maison
             </a>
             
-            <div class="flex -mx-2">
-                <a href="#" class="mx-2 border-2 rounded-full p-1 text-black hover:text-blue-500" aria-label="Twitter">
+            <div className="flex -mx-2">
+                <a href="#" className="mx-2 border-2 rounded-full p-1 text-black hover:text-blue-500" aria-label="Twitter">
                     <svg className='w-5 h-5 fill-current'
                         xmlns="http://www.w3.org/2000/svg" 
                         viewBox="0 0 24 24">
@@ -21,7 +19,7 @@ const Footer = () => {
                     </svg>
                 </a>
 
-                <a href="#" class="mx-2 border-2 rounded-full p-1 text-black hover:text-blue-500" aria-label="Linkedin">
+                <a href="#" className="mx-2 border-2 rounded-full p-1 text-black hover:text-blue-500" aria-label="Linkedin">
                     
                 <svg className='w-5 h-5 fill-current'
                     xmlns="http://www.w3.org/2000/svg" 
@@ -31,7 +29,7 @@ const Footer = () => {
                 </svg>
                 </a>
 
-                <a href="#" class="mx-2 border-2 rounded-full p-1 text-black hover:text-blue-500" aria-label="Facebook">
+                <a href="#" className="mx-2 border-2 rounded-full p-1 text-black hover:text-blue-500" aria-label="Facebook">
                     <svg className='w-5 h-5 fill-current'
                         xmlns="http://www.w3.org/2000/svg" 
                         viewBox="0 0 30 30">
@@ -40,7 +38,7 @@ const Footer = () => {
                     </svg>
                 </a>
 
-                <a href="#" class="mx-2 border-2 rounded-full p-1 text-black hover:text-blue-500" aria-label="Intsagram">
+                <a href="#" className="mx-2 border-2 rounded-full p-1 text-black hover:text-blue-500" aria-label="Intsagram">
                     <svg className='w-5 h-5 fill-current'
                         xmlns="http://www.w3.org/2000/svg" 
                         viewBox="0 0 30 30">
